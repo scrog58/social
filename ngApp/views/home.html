@@ -1,0 +1,7 @@
+<div class="well" ng-repeat="post in controller.posts">
+  <a href="/friend/{{post.userId}}"><h4>{{post.username}}</h4></a> <br />
+  Date: {{post.dateCreated}} <br />
+  <div class="well">
+    {{post.content}}
+  </div>
+</div>

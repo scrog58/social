@@ -1,0 +1,13 @@
+<input type="text" ng-model="controller.username" /><br />
+<input type="password" ng-model="controller.password" /> <br />
+<button class="btn btn-primary" ng-click="controller.login()">Sign In</button>
+
+<hr>
+
+<div class="well" ng-repeat="post in controller.posts">
+  <h4>{{post.username}}</h4> <br />
+  Date: {{post.dateCreated}} <br />
+  <div class="well">
+    {{post.content}}
+  </div>
+</div>
